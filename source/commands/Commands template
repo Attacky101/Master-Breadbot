@@ -1,0 +1,8 @@
+module.exports = {
+    name: 'name',
+    aliases: ['aliases'],
+    description: 'description',
+    execute(message, args) {
+        //...
+    },
+};
