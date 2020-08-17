@@ -1,7 +1,5 @@
 # Master Breadbot
 Master Breadbot is a Discord Bot for a variety of purposes, practical and not practical ~~though mostly not practical~~.
-### Wiki
-The [Breadbot wiki](https://github.com/Coweh/Master-Breadbot/wiki) documents the bots commands, and the current state of development.
 ### Commands list
 (for a more detailed list of commands, go to [this](https://github.com/Coweh/Master-Breadbot/wiki/Commands) wiki page.
 * Booah
@@ -13,8 +11,9 @@ The [Breadbot wiki](https://github.com/Coweh/Master-Breadbot/wiki) documents the
 * Ooheeh
 * Ping
 * Randomnumber
-
-
+---
+### Wiki
+The [Breadbot wiki](https://github.com/Coweh/Master-Breadbot/wiki) documents the bots commands, and the current state of development.
 ### Server
 You can join Breadbot's Discord server [here](https://discord.gg/FNU65f8).
 ### Invite
