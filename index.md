@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Coweh/Master-Breadbot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Coweh/Master-Breadbot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Master Breadbot
+Master Breadbot is a Discord Bot for a variety of purposes, practical and not practical ~~though mostly not practical~~.
+### Wiki
+The [Breadbot wiki](https://github.com/Coweh/Master-Breadbot/wiki) documents the bots commands, and the current state of development.
+### Commands list
+(for a more detailed list of commands, go to [this](https://github.com/Coweh/Master-Breadbot/wiki/Commands) wiki page.
+* Booah
+* Bread
+* Breadtype
+* Buge
+* Changelog
+* Eggmansannouncement
+* Ooheeh
+* Ping
+* Randomnumber
+### Server
+You can join Breadbot's Discord server [here](https://discord.gg/FNU65f8).
+### Invite
+Breadbot can be invited with [this](https://discord.com/oauth2/authorize?client_id=697563385184911420&scope=bot&permissions=8) link. You may want to instead join the Breadbot server, as Breadbot is still in development, doesn't have a lot of uses, and is frequently offline.
