@@ -5,7 +5,7 @@ module.exports = {
     usage: '<number>',
     execute(message, args) {
         if (message.member.hasPermission('MANAGE_MESSAGES')) {
-            const purgeAmount = parseInt(args[0]) + 1;
+            const purgeAmount = parseInt(args[0]);
             if (isNaN(purgeAmount)) {
                 return message.channel.send('Bruh that isn\'t even a valid number');
             }
@@ -13,10 +13,12 @@ module.exports = {
                 return message.channel.send('Boi, you have to input a number between 1 and 99.');
             }
             else {
-                message.channel.bulkDelete(purgeAmount, true).catch(err => {
+                message.channel.bulkDelete(purgeAmount + 1, true).catch(err => {
                     console.error(err);
                     message.channel.send('There was an error trying to purge messages. The messages may be too old.');
                 });
+                return message.channel.send(`Deleted ${purgeAmount} messages.`)
+                    .then(message => message.delete({timeout: 1000}))
             }
         }
         else {
