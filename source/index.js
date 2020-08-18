@@ -36,8 +36,7 @@ bot.on('message', async (message) => {
         command.execute(message, args);
     } catch (error) {
         console.error(error);
-        // message.reply('there was an error trying to execute that command.');
-        message.channel.send(e.stack)
+        message.channel.send('Uh for some reason there was an error trying to execute that command');
     }
 
 });
