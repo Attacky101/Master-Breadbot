@@ -5,6 +5,6 @@ module.exports = {
     name: 'breadtype',
     description: 'Gives you a random type of bread that may or may not exist.',
     execute(message, args) {
-        message.channel.send(baketype[Math.floor(Math.random() * 4)] + ' ' + breadtype[Math.floor(Math.random() * 16)] + ' bread')
+        message.channel.send(baketype[Math.floor(Math.random() * baketype.length)] + ' ' + breadtype[Math.floor(Math.random() * breadtype.length)] + ' bread')
     },
 };
