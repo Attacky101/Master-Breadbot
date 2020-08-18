@@ -10,8 +10,8 @@ Master Breadbot is a Discord Bot for a variety of purposes, practical and not pr
 * Eggmansannouncement
 * Ooheeh
 * Ping
+* Purge
 * Randomnumber
-
 
 ---
 ### Wiki
