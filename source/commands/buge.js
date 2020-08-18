@@ -4,7 +4,12 @@ module.exports = {
     aliases: ['lookf'],
     description: 'Gives you a random buge.',
     execute(message, args) {
-        message.react('743245441667301477')
-        message.channel.send(`lookf at this stupteid BUGE\n`, buge[Math.floor(Math.random() * 10)])
+        if (Math.ceil(Math.random() * 120) == 120) {
+            message.channel.send({files:['https://cdn.discordapp.com/attachments/676934213156601899/745078718333976616/image0.gif']})
+        }
+        else {
+            message.react('743245441667301477')
+            message.channel.send(`lookf at this stupteid BUGE\n`, buge[Math.floor(Math.random() * 10)])
+        }
     },
 };
