@@ -9,7 +9,7 @@ module.exports = {
         }
         else {
             message.react('743245441667301477')
-            message.channel.send(`lookf at this stupteid BUGE\n`, buge[Math.floor(Math.random() * 10)])
+            message.channel.send(`lookf at this stupteid BUGE\n`, buge[Math.floor(Math.random() * buge.length)])
         }
     },
 };
