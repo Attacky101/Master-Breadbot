@@ -20,7 +20,7 @@ module.exports = {
             }
             else {
                 const num3 = Math.floor(Math.random() * (num2 - num1 + 1) + num1)
-                message.channel.send(`Here's a completely random number between ` + num1 + ` and ` + num2 + `:\n${num3}`)
+                message.channel.send(`Here's a random number between ` + num1 + ` and ` + num2 + `:\n${num3}`)
         }
         }
     },
