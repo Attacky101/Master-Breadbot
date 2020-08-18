@@ -3,6 +3,7 @@ module.exports = {
     name: 'bread',
     description: 'Gives you a random bread picture.',
     execute(message, args) {
+        message.react('🍞')
         message.channel.send(`Alright, here's some bread:\n`, bread[Math.floor(Math.random() * 9)])
     }
 }
