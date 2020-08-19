@@ -25,6 +25,10 @@ bot.on('message', async (message) => {
 
 	if (!command) return;
     
+    if (command.guildOnly && message.channel.type === 'dm') {
+        return message.reply('That command can\'t be used in DMs.');
+    }    
+
     if (command.args && !args.length) {
 		let reply = `Bruh, you didn't give me any arguments.`;
 		if (command.usage) {
