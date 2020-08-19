@@ -1,5 +1,5 @@
 // c o n s t a n t .
-  const fs = require('fs');
+const fs = require('fs');
 const Discord = require('discord.js');
 let embed = new Discord.MessageEmbed()
 const { prefix, token } = require('./config.json')
@@ -13,7 +13,7 @@ for (const file of commandFiles) {
 
 bot.on('message', async (message) => {
     bot.user.setPresence({activity: {name: "the buges take over", type: "WATCHING"}, status: "online"})
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
