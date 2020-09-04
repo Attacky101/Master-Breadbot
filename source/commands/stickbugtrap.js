@@ -6,7 +6,9 @@ module.exports = {
         const trapChannel = message.channel
         const stickBugger = message.author
         message.delete()
-        stickBugger.send('The trap\'s been set. Now we just wait...')
+        stickBugger.send('The trap\'s been set. Now we just wait...').catch(err => {
+            return;
+        })
         // Create a message collector that will end by DMing whoever ended said message collector.
         const filter = m => m.content.includes('');
         const collector = message.channel.createMessageCollector(filter, {max: 1});
