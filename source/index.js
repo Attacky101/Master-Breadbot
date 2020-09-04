@@ -13,7 +13,7 @@ for (const file of commandFiles) {
 
 bot.on('message', async (message) => {
     bot.user.setPresence({activity: {name: "the buges take over", type: "WATCHING"}, status: "online"})
-    if (!message.content.startsWith(prefix)) return;
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
