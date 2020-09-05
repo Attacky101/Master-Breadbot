@@ -6,8 +6,8 @@ module.exports = {
         const trapper = message.author;
         const trapChannel = message.channel;
         message.delete();
-        const trapText = [`You just got stick bugged by ${trapper} lol`, `${trapper} says Alley Rat`, `${trapper} says Rat Funk`]
-        const trapFile = [{files:['https://cdn.discordapp.com/attachments/702373206513942578/751554996641857566/image0.gif']}, {files:['https://www.mariowiki.com/images/b/bb/Alley_RatSMRPG.png']}, {files:['https://www.mariowiki.com/images/4/42/Rat_Funk_Sprite_-_Super_Mario_RPG.png']}]
+        const trapText = [`you just got stick bugged by ${trapper} lol`, `${trapper} says Alley Rat`, `${trapper} says Rat Funk`, `${trapper} would like to inform you that this is jeff`, `${trapper} says octolot`, `you've been buged by ${trapper}`, `${trapper} ran out of buges so have an egub`]
+        const trapFile = [{files:['https://cdn.discordapp.com/attachments/702373206513942578/751554996641857566/image0.gif']}, {files:['https://www.mariowiki.com/images/b/bb/Alley_RatSMRPG.png']}, {files:['https://www.mariowiki.com/images/4/42/Rat_Funk_Sprite_-_Super_Mario_RPG.png']}, {files:['https://cdn.discordapp.com/attachments/676934213156601899/751921869518667816/jeff.png']}, {files:['https://cdn.discordapp.com/attachments/697562331730935822/751923038177591346/Octolot_SMRPG.png']}, {files:['https://cdn.discordapp.com/attachments/697562331730935822/751923511282630656/buge.png']}, {files:['https://cdn.discordapp.com/attachments/697562331730935822/751923632904732783/buge2.png']}]
         trapper.send('The trap\'s been set. Now we just wait...').catch(err => {
             return;
         })
