@@ -11,8 +11,12 @@ for (const file of commandFiles) {
     bot.commands.set(command.name, command);
 }
 
+bot.on('ready', () => {
+    console.log('The bot is online.')
+    bot.user.setPresence({activity: {name: "the Hotel Mario cutscenes but edgier (oh yeah and also for eb!help I guess) | Unstable version of Master Breadbot#2446", type: "WATCHING"}, status: "online"})
+})
+
 bot.on('message', async (message) => {
-    bot.user.setPresence({activity: {name: "the buges take over", type: "WATCHING"}, status: "online"})
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
