@@ -1,7 +1,6 @@
 // c o n s t a n t .
 const fs = require('fs');
 const Discord = require('discord.js');
-let embed = new Discord.MessageEmbed()
 const { prefix, token } = require('./config.json')
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
