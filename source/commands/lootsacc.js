@@ -1,3 +1,5 @@
+// Lootsaccs are based on Lootkongs, a feature from CunoBot: https://github.com/MikhailMCraft/CunoBot/blob/master/src/commands/fun/lootkong.js
+
 const normalEmotes = ['<:BubblyPensive:745438001152262286>']
 const normalText = ['**Pensive Bubbly** (Normal)']
 
