@@ -3,6 +3,7 @@ module.exports = {
     name: 'buge',
     aliases: ['lookf'],
     description: 'Gives you a random buge.',
+    category: 'fun',
     execute(message, args) {
         if (Math.ceil(Math.random() * 49) == 49) {
             message.channel.send({files:['https://cdn.discordapp.com/attachments/676934213156601899/745078718333976616/image0.gif']})
