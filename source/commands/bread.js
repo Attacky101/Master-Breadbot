@@ -2,6 +2,7 @@ const bread = [{files:["https://cdn.discordapp.com/attachments/71562629555526047
 module.exports = {
     name: 'bread',
     description: 'Gives you a random bread picture.',
+    category: 'fun',
     execute(message, args) {
         message.react('🍞')
         message.channel.send(`Alright, here's some bread:\n`, bread[Math.floor(Math.random() * bread.length)])
