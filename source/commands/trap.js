@@ -2,6 +2,7 @@ module.exports = {
     name: 'trap',
     description: 'Set a trap that will send one of various images, videos, etc. to the first person to send a message in the channel this was used.',
     guildOnly: 'true',
+    category: 'fun',
     execute(message, args) {
         const trapper = message.author;
         const trapChannel = message.channel;
