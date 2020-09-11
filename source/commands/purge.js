@@ -3,6 +3,7 @@ module.exports = {
     description: 'Deletes a given amount of messages.',
     args: true,
     usage: '<number>',
+    category: 'moderation',
     execute(message, args) {
         if (message.member.hasPermission('MANAGE_MESSAGES')) {
             const purgeAmount = parseInt(args[0]);
