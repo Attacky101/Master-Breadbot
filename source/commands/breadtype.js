@@ -4,6 +4,7 @@ const breadtype = ['aish merahrah', 'ajdov kruh', 'anpan', 'appam', 'arboud', 'a
 module.exports = {
     name: 'breadtype',
     description: 'Gives you a random type of bread that may or may not exist.',
+    category: 'fun',
     execute(message, args) {
         message.channel.send(baketype[Math.floor(Math.random() * baketype.length)] + ' ' + breadtype[Math.floor(Math.random() * breadtype.length)] + ' bread')
     },
