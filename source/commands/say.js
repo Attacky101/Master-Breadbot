@@ -5,6 +5,7 @@ module.exports = {
     description: 'Can only be used by Coweh™#2517 or Cuno#3435. Makes Breadbot say something.',
     args: true,
     usage: '<text>',
+    category: 'utility',
     execute(message, args) {
         if (message.author.id === '591032513254916096' || message.author.id === '287372868814372885') {
             if (message.attachments.size > 0) {
