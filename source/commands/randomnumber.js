@@ -5,6 +5,7 @@ module.exports = {
     description: 'Gives you a random number between a given range (whole numbers only).',
     args: true,
     usage: '<first number in range> <second number in range>',
+    category: 'fun',
     execute(message, args) {
         if (args.length !== 2) {
             message.channel.send(`Hurb, you didn't give me the right amount of arguments.\nThe proper usage would be: \`${prefix}randomnumber ${this.usage}\``);
