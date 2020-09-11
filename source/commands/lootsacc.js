@@ -12,6 +12,7 @@ const highEndText = ['**Pinged Kirby** (High-End)', '**Donkey Pog** (High-End)']
 module.exports = {
     name: 'lootsacc',
     description: 'Have you ever wanted to open an Attacky Sack? Now you can.',
+    category: 'fun',
     async execute(message, args) {
         let emote1;
         let emote2;
