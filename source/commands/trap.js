@@ -1,6 +1,6 @@
 module.exports = {
     name: 'trap',
-    description: 'Set a trap that will send one of various images, videos, etc. to the first person to send a message in the channel this was used.',
+    description: 'Set a trap that will send one of various images, gifs, etc. if someone activates the trap by sending a message in the channel this was used.',
     guildOnly: 'true',
     category: 'fun',
     execute(message, args) {
