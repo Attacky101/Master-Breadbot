@@ -1,6 +1,7 @@
 module.exports = {
     name: 'kill',
     description: 'Can only be used by Coweh™#2517. Terminates the bot.',
+    category: 'utility',
     execute(message, args) {
       if (message.author.id === '591032513254916096') {
         console.log('The bot has disconnected.')
