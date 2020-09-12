@@ -12,7 +12,7 @@ for (const file of commandFiles) {
 
 bot.on('ready', () => {
     console.log('The bot is online.')
-    bot.user.setPresence({activity: {name: "the Hotel Mario cutscenes but edgier (oh yeah and also for eb!help I guess) | Unstable version of Master Breadbot#2446", type: "WATCHING"}, status: "online"})
+    bot.user.setPresence({activity: {name: "the Hotel Mario cutscenes (oh yeah and also for b!help I guess) | Owned by Coweh™#2517", type: "WATCHING"}, status: "online"})
 })
 
 bot.on('message', async (message) => {
