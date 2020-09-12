@@ -1,6 +1,6 @@
-//Note: this command is far from finished, which is why it doesn't have a lot of bread types.
 const { randFromArray } = require("../functions");
 
+// Note: this command is far from finished, which is why it doesn't have a lot of bread types.
 const baketype = ['Baked', 'Toasted', 'Uncooked', 'Cooked']
 const breadtype = ['aish merahrah', 'ajdov kruh', 'anpan', 'appam', 'arboud', 'arepa', 'baba', 'bagel', 'baguette', 'bakarkhani', 'balep korkun', 'bammy', 'banana', 'bannock', 'bara brith', 'barbari']
 module.exports = {
