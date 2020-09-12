@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const { prefix } = require('../config.json')
 module.exports = {
     name: 'help',
     aliases: ['commands'],
@@ -8,7 +7,7 @@ module.exports = {
     args: false,
     usage: '[command]',
     category: 'utility',
-    execute(message, args) {
+    execute(message, args, prefix) {
         const { commands } = message.client;
         const funCommands = commands.filter(command => command.category === 'fun')
         const utilCommands = commands.filter(command => command.category === 'utility')

@@ -1,4 +1,3 @@
-const {prefix} = require('../config.json')
 module.exports = {
     name: 'randomnumber',
     aliases: ['randomnum', 'rn', 'rnum'],
@@ -6,7 +5,7 @@ module.exports = {
     args: true,
     usage: '<first number in range> <second number in range>',
     category: 'fun',
-    execute(message, args) {
+    execute(message, args, prefix) {
         if (args.length !== 2) {
             message.channel.send(`Hurb, you didn't give me the right amount of arguments.\nThe proper usage would be: \`${prefix}randomnumber ${this.usage}\``);
         }

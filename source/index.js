@@ -1,7 +1,8 @@
 // c o n s t a n t .
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json')
+const { defprefix, token } = require('./config.json')
+const prefixes = require('./prefixes.json')
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -16,7 +17,9 @@ bot.on('ready', () => {
 })
 
 bot.on('message', async (message) => {
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    let prefix = prefixes[message.guild.id]
+    if (!prefix) {prefix = 'b!'}
+    if (message.author.bot || !message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
@@ -40,7 +43,7 @@ bot.on('message', async (message) => {
         return message.channel.send(reply);
     }
     try {
-        command.execute(message, args);
+        command.execute(message, args, prefix);
     } catch (error) {
         console.error(error);
         message.channel.send('Uh for some reason there was an error trying to execute that command');
