@@ -59,6 +59,5 @@ module.exports = {
         setTimeout(function(){
             lootsaccMessage1.edit(`\n<:sacc1:753687125391835296>${emote1}<:sacc2:753687125123399681>\n<:sacc3:753687125500887100>${emote2}<:sacc4:753687125106622465>`)
             lootsaccMessage2.edit(`**Lootsacc opened!**\nYou got:\n-${text1}\n-${text2}`)
-        }, 2000)
-    },
+        }, 2000)    },
 };
