@@ -14,11 +14,15 @@ for (const file of commandFiles) {
 bot.on('ready', () => {
     console.log('The bot is online.')
     bot.user.setPresence({activity: {name: "the Hotel Mario cutscenes (oh yeah and also for b!help I guess) | Owned by Coweh™#2517", type: "WATCHING"}, status: "online"})
+    fs.readFile('reports.txt', (err, data) => {
+        if (err) return message.channel.send('There was an error fetching reports.')
+        console.log(`Current reports: ${data}`)
+    })
 })
 
 bot.on('message', async (message) => {
     let prefix = prefixes[message.guild.id]
-    if (!prefix) {prefix = defprefix}
+    if (!prefix) {prefix = 'eb!'}
     if (message.author.bot || !message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
