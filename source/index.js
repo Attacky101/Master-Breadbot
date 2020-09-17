@@ -22,7 +22,7 @@ bot.on('ready', () => {
 
 bot.on('message', async (message) => {
     let prefix = prefixes[message.guild.id]
-    if (!prefix) {prefix = 'eb!'}
+    if (!prefix) {prefix = defprefix}
     if (message.author.bot || !message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
