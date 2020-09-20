@@ -15,13 +15,16 @@ module.exports = {
             if (Number.isInteger(num1) == false || Number.isInteger(num2) == false) {
                 message.channel.send('One or more arguments are not a whole number. (Decimals and numbers in word form like "one" will not work.)')
             }
-            else if (num1 >= num2) {
+            else if (num1 > num2) {
                 message.channel.send('The first number in the range cannot be greater than the second.')
+            }
+            else if (num1 == num2) {
+                message.channel.send('The first number in the range cannot be equal to the second.')
             }
             else {
                 const num3 = Math.floor(Math.random() * (num2 - num1 + 1) + num1)
-                message.channel.send(`Here's a random number between ` + num1 + ` and ` + num2 + `:\n${num3}`)
-        }
+                message.channel.send(`Here's a random number between ${num1} and ${num2}:\n${num3}`)
+            }
         }
     },
 };
