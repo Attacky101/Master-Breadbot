@@ -11,12 +11,12 @@ module.exports = {
                 return message.channel.send('Bruh that isn\'t even a valid number');
             }
             else if (purgeAmount < 1 || purgeAmount > 100) {
-                return message.channel.send('Boi, you have to input a number between 1 and 99.');
+                return message.channel.send('Boi, you have to input a number between 1 and 100.');
             }
             else {
-                message.channel.bulkDelete(purgeAmount + 1, true).catch(err => {
-                    console.error(err);
-                    message.channel.send('There was an error trying to purge messages. The messages may be too old.');
+                message.delete()
+                message.channel.bulkDelete(purgeAmount, true).catch(err => {
+                    message.channel.send('There was an error trying to purge messages. The messages may be too old, or I may not have sufficient permissions.');
                 });
                 return message.channel.send(`Deleted ${purgeAmount} messages.`)
                     .then(message => message.delete({timeout: 1000}))
